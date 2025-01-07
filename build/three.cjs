@@ -49239,7 +49239,7 @@ function WebGLTextures( _gl, extensions, state, properties, capabilities, utils,
 		if ( _videoTextures.get( texture ) !== frame ) {
 
 			_videoTextures.set( texture, frame );
-			texture.update();
+			texture.needsUpdate = true;
 
 		}
 
